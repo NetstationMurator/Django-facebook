@@ -56,6 +56,7 @@ facebookClass.prototype = {
     },
 
     connect: function (formElement, requiredPerms) {
+        document.body.appendChild(formElement);
         if (this.ithing) {
             return formElement.submit();
         }
